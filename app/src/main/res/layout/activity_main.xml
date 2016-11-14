@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.nicholasdass.mypizzaapp.MainActivity">
+
+    <TextView
+        android:id="@+id/txtSelectSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_the_size"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="sans-serif" />
+
+    <RadioGroup
+        android:id="@+id/grpPizzaSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/radSmall"
+            android:checked="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pizza_small"/>
+
+        <RadioButton
+            android:id="@+id/radMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pizza_medium"/>
+
+        <RadioButton
+            android:id="@+id/radLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pizza_large"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAddToppings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_add_toppings"/>
+
+    <Button
+        android:id="@+id/btnNewPizza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_new_pizza"/>
+
+    <TextView
+        android:id="@+id/txtFinalOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="sans-serif" />
+
+</LinearLayout>
